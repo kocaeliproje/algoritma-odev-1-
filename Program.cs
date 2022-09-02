@@ -8,7 +8,7 @@ class Program
     { 
     Console.WriteLine ("Pozitif Bir Sayı Giriniz: ");
     int n=Convert.ToInt32(Console.ReadLine());
-    Console.WriteLine (n+" adet pozitif tam sayı giriniz: ");
+    Console.WriteLine (n+" adet pozitif tam 1sayı giriniz: ");
     int[] dizi = new int[n];
     int[] ciftSayi = new int[n];
       for (int i = 0; i < dizi.Length; i++)
