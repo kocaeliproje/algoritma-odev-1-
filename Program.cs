@@ -6,27 +6,19 @@ class Program
 {
     static void Main(string[] args)
     { 
+    Console.WriteLine ("Girilen Sayılardan Çif Olanları veren Program");
     Console.WriteLine ("Pozitif Bir Sayı Giriniz: ");
     int n=Convert.ToInt32(Console.ReadLine());
-    Console.WriteLine (n+" adet pozitif tam 1sayı giriniz: ");
-    int[] dizi = new int[n];
-    int[] ciftSayi = new int[n];
+    Console.WriteLine (n+" adet pozitif tam sayı giriniz: ");
+      int[] dizi = new int[n];
       for (int i = 0; i < dizi.Length; i++)
         {
-            dizi[i]=Convert.ToInt16(Console.ReadLine());
-            if (dizi[i]%2==0)
-            {
-           Console.WriteLine ("Girilen Çift Sayılar: ");
-           for (int j = 0; j < dizi.Length; j++) 
-           ciftSayi[j]=dizi[i];            
-            }
-            else{
-                continue;
-            }
-            for (int k = 0; k < dizi.Length; k++) 
-             Console.Write (ciftSayi[k]);
+            dizi[i]=Convert.ToInt32(Console.ReadLine());
         }
-    
-    }
-
-}
+      for (int j = 0; j < dizi.Length; j++)
+        {
+        if (dizi[j]%2==0)
+            Console.WriteLine(dizi[j]);
+        }        
+    }  
+       
