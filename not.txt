@@ -1,0 +1,53 @@
+ 
+/* 2) Bir konsol uygulamasında kullanıcıdan pozitif iki sayı girmesini isteyin (n, m). Sonrasında kullanıcıdan n adet pozitif sayı girmesini isteyin. Kullanıcının girmiş olduğu sayılardan m'e eşit yada tam bölünenleri console'a yazdırın.*/
+public class islemler{
+  public int ikisayi (int n1,int m1)
+    {
+    islemler odev2= new();
+        Console.WriteLine ("Pozitif İki Sayı Giriniz: ");
+        Console.WriteLine(odev2.ikisayi(3,4) );
+    int n1=Convert.ToInt32(Console.ReadLine());
+    int m1=Convert.ToInt32(Console.ReadLine());
+    return (n1*m1);
+
+    }
+  }
+}
+
+
+
+/*  Array.Sort(dizi);
+      foreach (int value in dizi)
+            {
+                Console.Write(value);
+            }
+    */
+
+
+      /*
+        
+    //int[] ciftSayi = new int[n];
+      
+       foreach(var sayi in dizi)
+            {
+                Console.WriteLine(sayi);
+            }
+          
+
+
+            if (dizi[m]%2==0)
+            {
+           
+           for (int j = 0; j < dizi.Length; j++) 
+           ciftSayi[j]=dizi[i];  
+
+            }
+            else{
+                continue;
+                }
+          
+        }
+        Console.WriteLine ("Girilen Çift Sayılar: ");
+        for (int k = 0; k < ciftSayi.Length; k++) 
+             Console.Write (ciftSayi[k]);
+    */
