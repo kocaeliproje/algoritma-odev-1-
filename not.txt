@@ -51,3 +51,9 @@ public class islemler{
         for (int k = 0; k < ciftSayi.Length; k++) 
              Console.Write (ciftSayi[k]);
     */
+
+
+
+
+
+    
