@@ -9,7 +9,9 @@ namespace AlgoritmaOdevi
       { 
          sorular soru=new sorular();
          //soru.ciftYazdir();
-         soru.tamBolen();   
+         //soru.tamBolen();
+         //soru.kelimeYaz();
+         soru.kelimeSay();
       }  
     }
 
@@ -48,11 +50,39 @@ namespace AlgoritmaOdevi
         }
         foreach (var item in dizi2)
         {
-        for (int k=0; k<dizi2.Length; k++)
-        if (dizi2[k]==item)
-        Console.WriteLine(dizi2[k]);
+        if (item==m||item%m==0)
+        Console.WriteLine(item);
         }
       }
+//3) Bir konsol uygulamasında kullanıcıdan pozitif bir sayı girmesini isteyin (n). Sonrasında kullanıcıdan n adet kelime girmesi isteyin. Kullanıcının girişini yaptığı kelimeleri sondan başa doğru console'a yazdırın.
+          public void kelimeYaz()
+          {
+            Console.WriteLine("Pozitif Bir Sayı Giriniz: ");
+            int n= Convert.ToInt32(Console.ReadLine());
+            Console.WriteLine(n+"Adet Kelime Giriniz: ");
+            string[] dizi= new string[n];
+            for (int i = 0; i < dizi.Length; i++)
+            {
+              dizi[i]=Console.ReadLine(); 
+            }
+            Array.Reverse(dizi);
+            foreach (var item2 in dizi)
+            {
+              Console.WriteLine(item2);
+            }
+            
+          }
+//4) Bir konsol uygulamasında kullanıcıdan bir cümle yazması isteyin. Cümledeki toplam kelime ve harf sayısını console'a yazdırın
+          public void kelimeSay()
+          {
+            Console.WriteLine("Bir Cümle Yazınız");
+            string cumle= Console.ReadLine();
+            string[] kelimeler= cumle.Split(' ');
+            foreach (var item in kelimeler)
+            {
+              Console.WriteLine(item);
+            }
+          }
     }
  }
 
